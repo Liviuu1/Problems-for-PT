@@ -21,11 +21,13 @@ int main()
     struct Node* head= NULL;
     struct Node* second=NULL;
     struct Node* third=NULL;
+    struct Node* forth=NULL;
 
 
     head=(struct Node*)malloc(sizeof(struct Node));
     second=(struct Node*)malloc(sizeof(struct Node));
     third=(struct Node*)malloc(sizeof(struct Node));
+    forth=(struct Node*)malloc(sizeof(struct Node));
 
     head->data=1;
     head->next=second;
@@ -34,8 +36,10 @@ int main()
     second->next=third;
 
     third->data=3;
-    third->next=NULL;
+    third->next=forth;
 
+    forth->data=4;
+    forth->next=NULL;
 
     printList(head);
     return 0;
