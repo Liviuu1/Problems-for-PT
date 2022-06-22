@@ -53,7 +53,7 @@ void pattern(int st[])
 }
 
 
-void  backtrack(int st[],int n)
+void  backTrack(int st[],int n)
 {
     st[1]=0;
     st[2]=7;
@@ -71,7 +71,7 @@ void  backtrack(int st[],int n)
                 pattern(st);
             else
                 {
-                    bactrack(st,n+1);
+                    backTrack(st,n+1);
                 }
         }
     }
@@ -79,7 +79,7 @@ void  backtrack(int st[],int n)
 
 int main()
 {
-    backtrack(st,5);
+    backTrack(st,5);
 
     return 0;
 }
