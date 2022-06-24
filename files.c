@@ -10,9 +10,10 @@ int main()
 
     while(!feof(fp))
     {
-	fgets(line,256,fp);
-	puts(line);
+    	fgets(line,256,fp);
+    	puts(line);
     }
+    
     fclose(fp);
 
     return 0;
