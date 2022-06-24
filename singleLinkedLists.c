@@ -7,7 +7,7 @@ struct Node {
     struct Node* next;
 };
 
-void printfNodes(struct Node* n)
+void printNodes(struct Node* n)
 {
     while(n!=NULL)
     {
@@ -42,8 +42,9 @@ int main()
     forth->next=NULL;
 
     printNodes(head);
-
+    return 0;
 }
+
 
 
 
